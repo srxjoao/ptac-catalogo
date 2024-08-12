@@ -6,6 +6,8 @@ import { useState } from "react";
 import acessorio1 from "../image/acessorio1.jpg";
 import acessorio2 from "../image/acessorio2.jpg";
 import acessorio3 from "../image/acessorio3.jpg";
+export default function Home(){
+
 const [listaProdutos,setProdutos] = useState (
     [
         {
@@ -26,5 +28,11 @@ const [listaProdutos,setProdutos] = useState (
             imagem: {acessorio3},
             preco: "R$ 1.231,88"
         },
-    ]
-)
+    ])
+
+    return (
+        <div>
+            <h1>Jottape's Tech Hub | Itens para o seu Setup</h1>
+        </div>
+    );
+}
