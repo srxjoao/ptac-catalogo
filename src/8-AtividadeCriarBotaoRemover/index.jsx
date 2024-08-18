@@ -37,8 +37,9 @@
 // No valor do `onClick`, chame a função `removerItemPedidos`.
 // Passe o identificador (`id`) do item como parâmetro para `removerItemPedidos`, o mesmo que você usa no `map`.
 // No conteúdo do botão, coloque o texto "Remover".
-
 import { useState } from "react";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 export default function Home(){
   const [listaProdutos, setProdutos] = useState([
     {
@@ -105,6 +106,8 @@ export default function Home(){
             </div>
           )
           }
+           <Header title={"Dev nato cria de marcelino!"}/>
+           <Footer desenvolvedor={"Desenvolvido por João Pedro,arrasando no react,porque prestei muita atenção na aula do digníssimo Marcelino.💙"}/>
     </div>
       );
 }
